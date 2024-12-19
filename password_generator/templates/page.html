@@ -1,0 +1,21 @@
+{% load static tailwind_tags %}
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}My Website{% endblock %}</title>
+    {% tailwind_css %}
+</head>
+<body
+class='min-h-screen h-max w-screen bg-black font-sans text-white'
+>
+    {% block content %}
+        <h1>Welcome to my website!</h1>
+    {% endblock %}
+    <footer>
+        {% block footer %}
+            <p>Copyright © 2021</p>
+        {% endblock %}
+    </footer>
+</body>
+</html>
