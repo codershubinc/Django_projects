@@ -27,4 +27,4 @@ jobs:
         pip install -r requirements.txt
     - name: Run Tests
       run: |
-       ./password_generator/python manage.py test
+       python ./password_generator/manage.py test
