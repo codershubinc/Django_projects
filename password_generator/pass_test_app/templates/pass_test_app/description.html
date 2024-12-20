@@ -2,19 +2,21 @@
 {% load static tailwind_tags %}
 {% tailwind_css %}
 
-{% block title %}Pass app test{% endblock %}
+{% block title %}
+Pass app description
+{% endblock %}
 
 {% block content %}
 
 <h1
-    class='text-center text-slate-700 text-9xl '
+    class='text-center text-slate-700 text-2xl '
 >
-    Pass app test
+    Pass app description
 </h1>
 <div
 class='flex w-screen justify-center'
 >
-    {% for  chai  in chais  %}
+
     
     <div 
         class='flex flex-col items-center justify-center p-4 m-4 border-2 border-slate-700 border-solid  w-max '
@@ -34,9 +36,9 @@ class='flex w-screen justify-center'
         >
             {{chai.description}}
         </p>
-        <a href="{% url 'description' chai.id %}">Details</a>
     </div>
-    {% endfor %}
+
+    
 </div>
 
 

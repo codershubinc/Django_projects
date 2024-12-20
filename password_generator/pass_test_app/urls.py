@@ -19,4 +19,6 @@ from django.urls import path
 
 urlpatterns = [
     path('',  views.home,  name='home'),
+    # get id from url dynamically
+    path('description/<int:id>', views.chai_detail, name='description'),
 ]
