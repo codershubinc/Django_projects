@@ -1,0 +1,42 @@
+{% extends "../page.html" %}
+{% load static tailwind_tags %}
+{% tailwind_css %}
+
+{% block title %}Pass app test{% endblock %}
+
+{% block content %}
+
+<h1
+    class='text-center text-slate-700 text-9xl '
+>
+    Pass app test
+</h1>
+<div
+class='flex w-screen justify-center'
+>
+    {% for  chai  in chais  %}
+    
+    <div 
+        class='flex flex-col items-center justify-center p-4 m-4 border-2 border-slate-700 border-solid  w-max '
+    >
+        <img
+            src={{chai.image.url}}
+            class='w-72 p-1 border-2 border-slate-700 border-solid ' 
+            alt=""
+        > 
+        <h2
+            class='text-center text-slate-700 text-2xl'
+        >
+            {{chai.name}}
+        </h2>
+        <p
+            class='text-center text-slate-700 text-lg '
+        >
+            {{chai.description}}
+        </p>
+    </div>
+    {% endfor %}
+</div>
+
+
+{% endblock %}

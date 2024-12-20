@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'tailwind',
     'theme',
     'django_browser_reload',
+    'pass_test_app',
 ]
 
 MIDDLEWARE = [
@@ -122,6 +123,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'  # below this add the following line
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

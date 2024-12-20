@@ -4,17 +4,23 @@
 <html>
 <head>
     <title>{% block title %}My Website{% endblock %}</title>
+    <link rel="stylesheet" href={% static 'fonts.css' %}>
     {% tailwind_css %}
 </head>
 <body
-class='min-h-screen h-max w-screen bg-black font-sans text-white'
+    class='min-h-screen h-max w-screen bg-slate-600 text-slate-950 dark:bg-black font-sans dark:text-white font-roboto'
 >
     {% block content %}
         <h1>Welcome to my website!</h1>
     {% endblock %}
-    <footer>
+    <footer
+    class='absolute bottom-0 w-full bg-slate-950'
+    >
         {% block footer %}
-            <p>Copyright © 2021</p>
+            <p
+                class='text-center text-gray-500 text-md delius-swash-caps-regular'
+            >Copyright © 2024</p> 
+            
         {% endblock %}
     </footer>
 </body>

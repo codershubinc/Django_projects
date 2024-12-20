@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Delius+Swash+Caps&family=Love+Light&display=swap");
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.delius-swash-caps-regular {
+  font-family: "Delius Swash Caps", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.atma-light {
+  font-family: "Atma", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.atma-regular {
+  font-family: "Atma", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.atma-medium {
+  font-family: "Atma", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.atma-semibold {
+  font-family: "Atma", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.atma-bold {
+  font-family: "Atma", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.love-light-regular {
+  font-family: "Love Light", serif;
+  font-weight: 400;
+  font-style: normal;
+}
